@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Athletics — 6-Week Transformation Challenge</title>
+<meta name="description" content="Join Apex Athletics' 6-week functional fitness challenge. Claim your free 3-day pass and train with certified coaches in a small-group, results-driven gym.">
+
+<!-- Google Fonts: Anton for the loud headline voice, Work Sans for everything readable, JetBrains Mono for the numbers (prices, week counter) — like a gym clock read-out -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@500;700&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==========================================================================
+     HEADER
+     ========================================================================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-inner">
+    <a href="#top" class="logo"><span class="logo-mark"></span>Apex Athletics</a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#why-us">Programs</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#program">Pricing</a>
+    </nav>
+
+    <div class="nav-cta-slot">
+      <a href="#lead-form" class="btn btn-primary btn-sm">Claim Free Pass</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#why-us">Programs</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#program">Pricing</a>
+    <a href="#lead-form" class="btn btn-primary btn-block">Claim Free Pass</a>
+  </div>
+</header>
+
+<!-- ==========================================================================
+     HERO
+     ========================================================================== -->
+<section class="hero" id="top">
+  <div class="hero-media" id="heroMedia">
+    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=70"
+         alt="Athlete mid-lift during a functional training session at Apex Athletics"
+         id="heroImg" loading="eager">
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <span class="eyebrow">6-Week Transformation Challenge — Enrolling Now</span>
+      <h1 class="hero-title">Transform Your Body.<br><span class="accent-line">Elevate Your Mind.</span></h1>
+      <p class="hero-sub">Join our high-intensity, expert-led 6-week functional fitness program designed for all fitness levels.</p>
+
+      <div class="hero-ctas">
+        <a href="#lead-form" class="btn btn-primary">Get Your 3-Day Free Pass</a>
+        <a href="#why-us" class="btn btn-ghost">Learn More</a>
+      </div>
+
+      <div class="week-tracker" aria-hidden="true">
+        <span class="wt-label">6-Week Cycle</span>
+        <div class="wt-cells" id="weekCells">
+          <span class="wt-cell">W1</span>
+          <span class="wt-cell">W2</span>
+          <span class="wt-cell">W3</span>
+          <span class="wt-cell">W4</span>
+          <span class="wt-cell">W5</span>
+          <span class="wt-cell">W6</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     WHY US
+     ========================================================================== -->
+<section class="why-us" id="why-us">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">The Apex Difference</span>
+      <h2 class="section-title">Why Train With Apex?</h2>
+      <p class="section-lede">No fads, no guesswork — just coaching, community, and a plan built to fit your life.</p>
+    </div>
+
+    <div class="why-grid reveal">
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 8v8M2 10v4M20 8v8M22 10v4M7 12h10M6 9v6M18 9v6"/>
+          </svg>
+        </div>
+        <h3>Expert Coaching</h3>
+        <p>Certified trainers dedicated to perfecting your form and avoiding injury — every rep, every session.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3c-3 3-5 6-5 9.5a5 5 0 0010 0C17 9 15 6 12 3z"/>
+            <path d="M12 3c1 1.5 1 3 0 4"/>
+          </svg>
+        </div>
+        <h3>Customized Nutrition</h3>
+        <p>Tailored meal plans built around your training goals — not a generic sheet handed to everyone.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8" cy="9" r="3"/><circle cx="17" cy="10" r="2.4"/>
+            <path d="M2.5 20c.5-3.5 2.8-5.5 5.5-5.5s5 2 5.5 5.5M14.5 20c.3-2.6 1.8-4.4 4-4.7"/>
+          </svg>
+        </div>
+        <h3>Community Driven</h3>
+        <p>Small group classes with a supportive atmosphere — you'll know names, not just faces.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>
+          </svg>
+        </div>
+        <h3>Flexible Schedules</h3>
+        <p>Early morning, lunch, and evening sessions available daily — train around your life, not against it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     PROGRAM / PRICING
+     ========================================================================== -->
+<section class="program" id="program">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Membership</span>
+      <h2 class="section-title">Choose Your Path</h2>
+      <p class="section-lede">Two ways in. Same coaching standard, same community — pick the one that matches your goal.</p>
+    </div>
+
+    <div class="reveal">
+      <div class="plan-toggle" role="tablist" aria-label="Membership plans">
+        <button type="button" class="is-active" id="tabMonthly" role="tab" aria-selected="true">Monthly Membership</button>
+        <button type="button" id="tabChallenge" role="tab" aria-selected="false">6-Week Challenge</button>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-price-side">
+          <div class="plan-name" id="planName">Monthly Membership</div>
+          <div class="plan-tagline" id="planTagline">Ongoing access, cancel any time.</div>
+          <div class="plan-price"><sup>$</sup><span id="planPrice">149</span><span class="price-suffix" id="planSuffix">/ month</span></div>
+          <div class="plan-note" id="planNote">Billed monthly. No long-term contract.</div>
+          <a href="#lead-form" class="btn btn-primary" id="planCta">Start Monthly Membership</a>
+        </div>
+        <div class="plan-perks-side">
+          <h4>What's Included</h4>
+          <ul class="perks-list" id="planPerks"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     TESTIMONIALS
+     ========================================================================== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Social Proof</span>
+      <h2 class="section-title">Real Results From Real People</h2>
+      <p class="section-lede">Members who showed up for six weeks and left with a lot more than a lighter number on the scale.</p>
+    </div>
+
+    <div class="carousel reveal" id="carousel">
+      <div class="carousel-track-wrap">
+        <div class="carousel-track" id="carouselTrack">
+
+          <div class="t-card">
+            <div class="t-card-inner">
+              <div class="stars">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+              </div>
+              <p class="t-quote">"Lost 18 pounds and gained way more energy than I expected. The coaches actually watch your form, not just yell numbers at you."</p>
+              <p class="t-name">Renee Ortiz</p>
+              <p class="t-role">Completed the 6-Week Challenge</p>
+            </div>
+          </div>
+
+          <div class="t-card">
+            <div class="t-card-inner">
+              <div class="stars">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+              </div>
+              <p class="t-quote">"I've tried three gyms in this city. Apex is the first one where I didn't quit after the second week."</p>
+              <p class="t-name">David Kim</p>
+              <p class="t-role">Member, 8 months</p>
+            </div>
+          </div>
+
+          <div class="t-card">
+            <div class="t-card-inner">
+              <div class="stars">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.5l6.4-.6L10 1z"/></svg>
+              </div>
+              <p class="t-quote">"The morning class before work changed my whole day. Small group, real coaching, no ego."</p>
+              <p class="t-name">Priya Anand</p>
+              <p class="t-role">Completed the 6-Week Challenge</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <button class="carousel-arrow" id="prevSlide" aria-label="Previous testimonial">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button class="carousel-arrow" id="nextSlide" aria-label="Next testimonial">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     LEAD CAPTURE FORM
+     ========================================================================== -->
+<section class="lead" id="lead-form">
+  <div class="container lead-grid">
+    <div class="lead-info reveal">
+      <span class="eyebrow">Get Started</span>
+      <h2 class="section-title">Claim Your Free 3-Day Pass</h2>
+      <p>Try Apex before you commit to anything. Fill out the form and our team will reach out within one business day to get you on the schedule.</p>
+
+      <ul class="lead-points">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Full access to group classes for 3 days, no obligation.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>A free 15-minute consult with a coach to set your goals.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>No credit card required to claim your pass.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="form-card reveal">
+
+      <div class="form-status" id="formStatus" role="alert"></div>
+
+      <form id="leadForm" novalidate>
+        <div class="field">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="name" placeholder="Jordan Baker" autocomplete="name">
+          <p class="field-error" id="err-fullName">Please enter your full name.</p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" autocomplete="email">
+          <p class="field-error" id="err-email">Please enter a valid email address.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="goal">Fitness Goal</label>
+            <select id="goal" name="goal">
+              <option value="" disabled selected>Select one</option>
+              <option value="Weight Loss">Weight Loss</option>
+              <option value="Muscle Gain">Muscle Gain</option>
+              <option value="General Fitness">General Fitness</option>
+              <option value="Athletic Performance">Athletic Performance</option>
+            </select>
+            <p class="field-error" id="err-goal">Please select a goal.</p>
+          </div>
+
+          <div class="field">
+            <label for="time">Preferred Time</label>
+            <select id="time" name="preferred_time">
+              <option value="" disabled selected>Select one</option>
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Evening">Evening</option>
+            </select>
+            <p class="field-error" id="err-time">Please select a preferred time.</p>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Claim My Free Pass</button>
+        <p class="form-foot">We'll never share your info. Unsubscribe any time.</p>
+      </form>
+
+      <div class="success-panel" id="successPanel">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <h3>You're In</h3>
+        <p>Thanks — your free pass request landed in our inbox. A coach will reach out within one business day to get you scheduled.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     FOOTER
+     ========================================================================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo"><span class="logo-mark"></span>Apex Athletics</a>
+        <p>Boutique functional fitness training. Small groups, real coaching, real results.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Apex Athletics on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="#" aria-label="Apex Athletics on Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 3h-2a5 5 0 00-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Apex Athletics on TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4v10.5a3.5 3.5 0 11-3-3.46"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5V11c-1.7 0-3.2-.6-4.5-1.6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Hours</h5>
+        <p>Mon–Fri: 6:00 AM – 8:00 PM</p>
+        <p>Sat: 8:00 AM – 4:00 PM</p>
+        <p>Sun: Closed</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Location</h5>
+        <p>428 Foundry Street<br>Riverside District</p>
+        <p>Your City, ST 00000</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <p><a href="mailto:train@apexathletics.example">train@apexathletics.example</a></p>
+        <p><a href="tel:+10000000000">(000) 000-0000</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Apex Athletics. All rights reserved.</span>
+      <span>Built for people who show up.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
